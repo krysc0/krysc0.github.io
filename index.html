@@ -1,5 +1,5 @@
 <!DOCTYPE html> <!-- defines document as an HTML5 document -->
-<html lang="en">
+<html lang="en-US"> <!-- language of the document.assists search engines and browsers -->
 <head> <!-- contains meta information about the document -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +7,45 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body> <!-- everything visible on the page -->
-    <h1>Welcome to My Personal Website</h1> <!-- can use h1 to h6 -->
-    <p>Hello, I'm Krystal!</p>
-    <a href="https://www.linkedin.com/in/krystal-coleman">LinkedIn</a> <br>
-    <img src="profile.JPG" alt="Beach pic" width="104" height="142"> <!-- image with alternative text -->
+    <h1>Hello, I'm Krystal!</h1> <!-- can use h1 to h6 -->
+
+    <p title="About Me">
+        Welcome to My Personal Website
+    </p> <!-- always starts on a new line. title defines hover over text-->
+
+    <hr>
+
+    <p> 
+        Overtime this website will get updated with more information about me. 
+        By the end of this semester, I will have a fully functional website 
+        with multiple pages and links to other website.
+    </p>
+
+    <a href="https://www.linkedin.com/in/krystal-coleman" target="_blank" title="LinkedIn Profile">
+        <img 
+            src="linkedin_logo_black.png" 
+            alt="LinkedIn logo"
+            width="30" 
+            height="30">
+    </a> 
+
+    <br>
+
+    <!-- targets can be _self, _blank, _parent, _top -->
+    
+    <img 
+        src="profile.JPG" 
+        alt="Beach picture I took with a disposable film camera in Jan 2026" 
+        width="104" 
+        height="142"
+    > <!-- image with alternative text --> 
+
+    <br>
+
+    <button 
+        onclick="document.location='https://www.youtube.com/watch?v=invZIgVL2wo&list=RDinvZIgVL2wo&start_radio=1'">
+        Listen to Joy by Raye
+    </button> <!-- button as a link -->
+
 </body>
 </html>
