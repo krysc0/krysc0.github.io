@@ -1,11 +1,110 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    text-align: center;
-    padding: 50px;
+    background-color: #edeae0;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    height: 100dvh;
 }
 
-h1 {
-    color: #007acc;
+#homepage {
+    overflow: hidden;
+}
+
+header {
+    align-items: center; /* align content on cross axis */
+    background-color: #2a1d14;
+    display: flex;
+    flex-direction: row;
+    font-family: "Orbitron", serif;
+    font-size: 24px;
+    height: 10%;
+    justify-content: flex-end; /* align content on main axis */
+    overflow: hidden;
+    margin-bottom: 10px;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.top-nav ul{ /*flex item*/
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    margin: 20px;
+    transform: skewY(1deg); /* UNSKEW */
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.top-nav a:hover {
+    background-color: #1c130d;
+}
+
+.top-nav a:active {
+    background-color: #1c130d;
+}
+
+/* UNDER THE HEADER */
+
+.page-layout {
+    display: flex;
+    overflow: hidden;
+    height: 80%;
+    font-family: "garamond", serif;
+}
+
+/* SIDE NAVIGATION has fixed width */
+aside{
+    background-color: #8f4700;
+    display: flex;
+    width: 20%;
+    height: 100%;
+    flex-direction: column;
+    font-family: "Orbitron", serif;
+    justify-content: center;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+}
+
+.side-nav {
+    height: 100%;
+    width: 100%;
+}
+
+.side-nav ul{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.side-nav a {
+    color: white;
+    font-size: large;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.side-nav a:hover {
+    background-color: #7a3d00;
+}
+
+/* MAIN BODY takes up remaining space */
+main {
+    background-color: #6f8f72;
+    height: 100%;
+    width: 80%; 
+    padding: 0 100px;
+    clip-path: polygon(3% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+h2 {
+    font-family: "Montserrat", serif;
 }
